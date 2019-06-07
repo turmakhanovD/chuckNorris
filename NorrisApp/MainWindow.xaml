@@ -1,0 +1,33 @@
+﻿<Window x:Class="NorrisApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NorrisApp"
+        mc:Ignorable="d"
+        Title="Norris App" Height="450" Width="783.072">
+    <Grid Margin="0,0,0,-3">
+        <TextBlock HorizontalAlignment="Left" Margin="209,10,0,0" TextWrapping="Wrap" Text="Jokes by Chuck Norris" VerticalAlignment="Top" Height="42" Width="420" FontSize="24" FontFamily="Comic Sans MS" Foreground="#FFF76D0D"/>
+        <Button Content="Get joke" Margin="601,379,10,10" Click="GetJoke"/>
+        <ComboBox Name="comboBox" HorizontalAlignment="Left" Margin="270,57,0,0" VerticalAlignment="Top" Width="473">
+            <ComboBoxItem Content="animal"/>
+            <ComboBoxItem Content="career"/>
+            <ComboBoxItem Content="celebrity"/>
+            <ComboBoxItem Content="dev"/>
+            <ComboBoxItem Content="explicit"/>
+            <ComboBoxItem Content="fashion"/>
+            <ComboBoxItem Content="food"/>
+            <ComboBoxItem Content="history"/>
+            <ComboBoxItem Content="money"/>
+            <ComboBoxItem Content="movie"/>
+            <ComboBoxItem Content="music"/>
+            <ComboBoxItem Content="political"/>
+            <ComboBoxItem Content="religion"/>
+            <ComboBoxItem Content="science"/>
+            <ComboBoxItem Content="sport"/>
+            <ComboBoxItem Content="travel"/>
+        </ComboBox>
+        <Label Content="Category:" HorizontalAlignment="Left" Margin="68,57,0,0" VerticalAlignment="Top" Width="164"/>
+
+    </Grid>
+</Window>
